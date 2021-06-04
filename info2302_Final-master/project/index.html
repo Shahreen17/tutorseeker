@@ -71,121 +71,115 @@
 
       <!-- Main -->
       <div id="main">
-      <div style="background-image: url('assets/img/wallpaper5.jpg');">
-	<div style="background-repeat: no-repeat";>
-        <div style="background-size: auto";>
+        <div class="bg-home" style="background-image: url('assets/img/wallpaper5.jpg')">
+          <div style="background-repeat: no-repeat" ;>
+            <div style="background-size: auto" ;>
+              <div class="inner">
+                <div class="container-center">
+                  <div id="contentHeader">
+                    <h1 id="titleTutor">Welcome to TUTOR SEEKER</h1>
+                    <h3>Are you a tutor or student?</h3>
+                  </div>
 
-        <div class="inner">
-          <div id="contentHeader">
-            <h1 id="titleTutor">Welcome to TUTOR SEEKER</h1>
-          </div>
+                  <section class="tiles">
+                    <!-- Tutor -->
+                    <article class="choice">
+                      <span class="image">
+                        <img src="assets/img/teacher.jpg" alt="Tutor" />
+                      </span>
+                      <a href="#" data-toggle="modal" data-target="#selectLvlModal">
+                        <h2>Tutor</h2>
+                      </a>
+                    </article>
+                    <br />
+                    <br />
+                    <!-- /Tutor -->
 
-          <section class="tiles">
-            <!-- Tutor -->
-            <article class="choice">
-              <span class="image">
-                <img src="assets/img/teacher1.jpg" alt="Tutor" />
-              </span>
-              <a href="#" data-toggle="modal" data-target="#selectLvlModal">
-                <h2>Tutor</h2>
-              </a>
-            </article>
-            <br></br>
-            <!-- /Tutor -->
-
-            <!-- Student -->
-            <article class="choice">
-              <span class="image">
-                <img src="assets/img/student1.jpg" alt="Tutor" />
-              </span>
-              <a href="#" data-toggle="modal" data-target="#selectLvlModal">
-                <h2>Student</h2>
-              </a>
-            </article>
-            <br></br>
-            <!-- /Student -->
-          </section>
-        </div>
-      </div>
-      <!-- /Main -->
-
-      <!-- The Modal -->
-      <div id="selectLvlModal" class="modal fade">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <div class="modal-title">
-                <h5>Choose a level</h5>
+                    <!-- Student -->
+                    <article class="choice">
+                      <span class="image">
+                        <img src="assets/img/student.jpg" alt="Tutor" />
+                      </span>
+                      <a href="#" data-toggle="modal" data-target="#selectLvlModal">
+                        <h2>Student</h2>
+                      </a>
+                    </article>
+                    <br />
+                    <br />
+                    <!-- /Student -->
+                  </section>
+                </div>
               </div>
-            </div>
-            <div class="modal-body">
-              <div id="chooseLevel" class="row mr-2"></div>
             </div>
           </div>
         </div>
-      </div>
+        <!-- /Main -->
 
-      <!-- Footer -->
-      <footer>
-        <div class="inner">
-          <!-- Contact -->
-          <section>
-            <h2>Contact Us</h2>
-            <script
-              type="text/javascript"
-              src="assets/js/validation.js"
-            ></script>
-            <form name="inquiry" method="post" onsubmit="return validateForm()">
-              <div class="fields">
-                <div class="field half">
-                  <span id="error-name"></span>
-                  <input type="text" name="name" id="name" placeholder="Name" />
-                </div>
-                <div class="field half">
-                  <span id="error-email"></span>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Email"
-                  />
-                </div>
-                <div class="field">
-                  <span id="error-message"></span>
-                  <textarea
-                    name="message"
-                    id="message"
-                    placeholder="Message"
-                  ></textarea>
+        <!-- The Modal -->
+        <div id="selectLvlModal" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="modal-title">
+                  <h5>Choose a level</h5>
                 </div>
               </div>
-              <input type="submit" value="Send" class="primary" />
-            </form>
-          </section>
-          <!-- /Contact -->
-
-          <!-- Follow -->
-          <section>
-            <h2>Follow</h2>
-            <ul class="icons">
-              <li>
-                <a href="#" class="icon brands follow fa-twitter">
-                  <span class="label">Twitter</span>
-                </a>
-              </li>
-            </ul>
-          </section>
-          <!-- /Follow -->
-
-          <!-- Copyright -->
-          <ul class="copyright">
-            <li>&copy; Untitled. All rights reserved</li>
-            <li>Design: <a href="#">Ejah uh</a></li>
-          </ul>
-          <!-- /Copyright -->
+              <div class="modal-body">
+                <div id="chooseLevel" class="row mr-2"></div>
+              </div>
+            </div>
+          </div>
         </div>
-      </footer>
-      <!-- /Footer -->
+
+        <!-- Footer -->
+        <footer>
+          <div class="inner inner-footer">
+            <!-- Contact -->
+            <section>
+              <h2>Contact Us</h2>
+              <script type="text/javascript" src="assets/js/validation.js"></script>
+              <form name="inquiry" method="post" onsubmit="return validateForm()">
+                <div class="fields">
+                  <div class="field half">
+                    <span id="error-name"></span>
+                    <input type="text" name="name" id="name" placeholder="Name" />
+                  </div>
+                  <div class="field half">
+                    <span id="error-email"></span>
+                    <input type="email" name="email" id="email" placeholder="Email" />
+                  </div>
+                  <div class="field">
+                    <span id="error-message"></span>
+                    <textarea name="message" id="message" placeholder="Message"></textarea>
+                  </div>
+                </div>
+                <input type="submit" value="Send" class="primary" />
+              </form>
+            </section>
+            <!-- /Contact -->
+
+            <!-- Follow -->
+            <section>
+              <h2>Follow</h2>
+              <ul class="icons">
+                <li>
+                  <a href="#" class="icon brands follow fa-twitter">
+                    <span class="label">Twitter</span>
+                  </a>
+                  <a href="#" class="icon brands follow fa-facebook">
+                    <span class="label">Twitter</span>
+                  </a>
+                  <a href="#" class="icon brands follow fa-instagram">
+                    <span class="label">Twitter</span>
+                  </a>
+                </li>
+              </ul>
+            </section>
+            <!-- /Follow -->
+          </div>
+        </footer>
+        <!-- /Footer -->
+      </div>
     </div>
 
     <script src="assets/js/index.js"></script>
